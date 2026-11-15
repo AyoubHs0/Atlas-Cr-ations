@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header id="header">
+        <div id="logo">
+            <a href="index.html">Atlas Créations</a>
+        </div>
+        <nav>
+            <ul id="menu">
+                <li><a href="#accueil">Accuil</a></li>
+                <li><a href="#services" id="nav-services">Services</a></li>
+                <li><a href="#contact" id="nav-contact">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="accueil">
+            <div>
+                <h1>Des sites vitrines pour les artisans d’ici</h1>
+                <p>Bienvenue chez Atlas Créations : votre vitrine en ligne, <br> pensée pour l’artisanat marocain.</p>
+            </div>
+            <img src="img/AtlasHub.jpg" data-role="hero">
+        </section>
+        <section id="services" hidden>
+            <h2>Services</h2>
+            <ul id="services-list"></ul>
+            <button id="btn-ajouterS">ajouter un services</button>
+        </section>
+        <section>
+            <h2>Témoignages</h2>
+            <article class="testimonials">
+                <div class="testimonial">
+                    <blockquote>Mon atelier a enfin une vitrine en ligne.</blockquote>
+                    <cite>Fatima, potière à Safi</cite>
+                    <button type="button">Details</button>
+                </div>
+                <div class="testimonial">
+                    <blockquote>Livraison rapide, site clair.</blockquote>
+                    <cite>Youssef, ébéniste à Fès</cite>
+                    <button type="button">Details</button>
+                </div>
+                <div class="testimonial">
+                    <blockquote>Mes clients me trouvent facilement.</blockquote>
+                    <cite>Khadija, tisserande à Azrou</cite>
+                    <button>Details</button>
+                </div>
+            </article>
+        </section>
+        <section>
+            <h2>Produits</h2>
+            <ul id="productlist">
+                <li data-name="tajine" data-price="100">
+                    tajine - 100dh
+                    <button type="button">ajouter</button>
+                </li>
+                <li data-name="tapis" data-price="150">
+                    tapis -150dh
+                    <button id="btn-ajouter-P" type="button">ajouter</button>
+                </li>
+            </ul>
+            <h2>Panier</h2>
+            <ul id="panier"></ul>
+            <p>Total : <span id="total">0</span>DH</p>
+        </section>
+    </main>
+    <footer data-copy="© 2026 Atlas Créations">
+        <p>© 2026 Atlas Créations - Tous droits réservés</p>
+    </footer>
+    
+    <section class="modal">
+        <span id="fermer">X</span>
+        <h2>Filter</h2>
+        <form id="filter">
+            <label><input type="checkbox">Poterie</label>
+            <label><input type="checkbox">Tissage</label>
+            <label><input type="checkbox">Bois</label>
+        </form>
+        <form id="contactForm">
+            <input type="text" placeholder="Votre nom">
+            <input type="email" placeholder="Votre mail">
+            <textarea placeholder="Votre message"></textarea>
+            <button type="submit" id="btnSubmit">Soumettre</button>
+        </form>
+        <section class="carts">
+            <div class="cart">cart1</div>
+            <div class="cart">cart2</div>
+            <div class="cart">cart3</div>
+        </section>
+    </section>
+    <script src="assets/js/apps.js"></script>
+</body>
+
+</html>
